@@ -8,7 +8,7 @@ const about = {
   // all the properties are optional - can be left empty or deleted
   name: 'Neha Chintawar',
   role: 'Fresher Student',
-  picture: 'neha_img.jpg', // if you want to use local image, place it in the public/images folder and write its name here
+  picture: 'nehaImg.jpg', // if you want to use local image, place it in the public/images folder and write its name here
 
   description:
   'I’m a MERN Stack Developer passionate about building clean, responsive, and user-friendly web applications. I enjoy turning ideas into full-stack projects and constantly improving my skills in React, Node.js, Express, and MongoDB.',
