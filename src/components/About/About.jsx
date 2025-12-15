@@ -1,6 +1,7 @@
 import GitHubIcon from '@mui/icons-material/GitHub'
 import LinkedInIcon from '@mui/icons-material/LinkedIn'
 import { about } from '../../portfolio'
+//import neha_img from 'public/image/neha_img.png'
 import './About.css'
 
 const About = () => {
@@ -11,13 +12,15 @@ const About = () => {
       <div className='about__header'>
         {picture && (
           <img
-            src={
-              picture.startsWith('http')
-                ? picture
-                : `${process.env.PUBLIC_URL}/images/${picture}`
-            }
-            alt={name}
-            className='about__picture'
+            // src={
+            //   picture.startsWith('http')
+            //     ? picture
+            //     : `${import.meta.env.PUBLIC_URL}/images/neha_img.jpg`
+            // }
+            // className='about__picture'
+             src={`${import.meta.env.BASE_URL}image/nehaImg.jpeg`}
+  alt="Neha"
+  className="about__picture"
           />
         )}
 
