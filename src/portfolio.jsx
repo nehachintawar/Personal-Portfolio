@@ -7,7 +7,7 @@ const header = {
 const about = {
   // all the properties are optional - can be left empty or deleted
   name: 'Neha Chintawar',
-  role: 'Fresher Student',
+  role: 'Frontend Engineer',
   picture: 'nehaImg.jpg', // if you want to use local image, place it in the public/images folder and write its name here
 
   description:
