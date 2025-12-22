@@ -1,76 +1,24 @@
-import GitHubIcon from '@mui/icons-material/GitHub'
-import LinkedInIcon from '@mui/icons-material/LinkedIn'
-import { about } from '../../portfolio'
+import { about } from '../../portfolio';
 //import neha_img from 'public/image/neha_img.png'
-import './About.css'
+import './About.css';
 
 const About = () => {
-  const { name, role, description, resume, social, picture } = about
+  const { description, picture } = about;
 
   return (
-    <div className='about center'>
-      <div className='about__header'>
+    <div id="about" className="about center">
+      <div className="about__header">
         {picture && (
           <img
-            // src={
-            //   picture.startsWith('http')
-            //     ? picture
-            //     : `${import.meta.env.PUBLIC_URL}/images/neha_img.jpg`
-            // }
-            // className='about__picture'
-             src={`${import.meta.env.BASE_URL}image/nehaImg.jpeg`}
-  alt="Neha"
-  className="about__picture"
+            src={`${import.meta.env.BASE_URL}image/nehaImg.jpeg`}
+            alt="Neha"
+            className="about__picture"
           />
         )}
-
-    <div className='about__intro'>
-      {name && (
-        <h1>
-          Hi, I am <span className='about__name'>{name}.</span>
-        </h1>
-      )}
-
-      {role && <h2 className='about__role'>A {role}.</h2>}
-      <p className='about__desc'>{description && description}</p>
-      </div>
-      </div>
-
-      <div className='about__contact center'>
-        {resume && (
-          <a href={resume}>
-            <span type='button' className='btn btn--outline'>
-              Resume
-            </span>
-          </a>
-        )}
-
-        {social && (
-          <>
-            {social.github && (
-              <a
-                href={social.github}
-                aria-label='github'
-                className='link link--icon'
-              >
-                <GitHubIcon />
-              </a>
-            )}
-
-            {social.linkedin && (
-              <a
-                href={social.linkedin}
-                aria-label='linkedin'
-                className='link link--icon'
-              >
-                <LinkedInIcon />
-              </a>
-            )}
-          </>
-        )}
+        <p className="about__desc">{description && description}</p>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default About
+export default About;

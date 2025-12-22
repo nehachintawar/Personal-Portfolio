@@ -1,14 +1,9 @@
 .about {
+  min-height: 100dvh;
   flex-direction: column;
-  margin-top: 3em;
-}
-
-.about__name {
-  color: var(--clr-primary);
-}
-
-.about__role {
-  margin-top: 1.2em;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
 }
 
 .about__desc {
@@ -19,6 +14,10 @@
 .about__desc,
 .about__contact {
   margin-top: 2.4em;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  line-height: 1.6;
 }
 
 .about .link--icon {
@@ -31,27 +30,41 @@
 
 @media (max-width: 600px) {
   .app .about {
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     margin-top: 2em;
+    flex-direction: column;
   }
 }
 
 .about__header {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 1.5rem; /* space between picture and text */
   margin-bottom: 1.5rem;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 0 1rem;
 }
 
 .about__picture {
   width: 180px;
   height: 180px;
-  border-radius: 70%;   /* round profile */
+  border-radius: 70%;
   object-fit: cover;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  margin-bottom: 20px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-align: center;
 }
 
 .about__intro {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }

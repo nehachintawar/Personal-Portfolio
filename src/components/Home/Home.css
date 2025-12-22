@@ -1,0 +1,123 @@
+/* Base */
+.home {
+  min-height: 100dvh;
+  color: #dbe2ff;
+  background-color: #1f263b;
+}
+.home-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1em 2em;
+}
+/* Intro section */
+.home__intro h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #cfd6ff;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+
+.home__name {
+  color: var(--clr-primary);
+  justify-content: center;
+  align-items: center;
+}
+
+/* Role */
+.home__role {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #cbd2ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.2em;
+}
+
+/* Contact section (right aligned on desktop) */
+.home__contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  margin-top: 30px;
+}
+
+/* Resume button */
+.btn--outline {
+  border: 2px solid #8fa2ff;
+  background: transparent;
+  color: #8fa2ff;
+  padding: 10px 26px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn {
+  border: 2px solid #f08fff3e;
+  background: #f08fff3e;
+  padding: 10px 26px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  border: 2px solid #f08fff3e;
+  background: transparent;
+}
+
+.btn--outline:hover {
+  background-color: #8fa2ff;
+  color: #1f263b;
+}
+
+/* Icons */
+.link--icon {
+  color: #cbd2ff;
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  transition:
+    transform 0.3s ease,
+    color 0.3s ease;
+}
+
+.link--icon:hover {
+  color: #8fa2ff;
+  transform: scale(1.2);
+}
+
+/* Align intro + contact like image */
+.home {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .home {
+    grid-template-columns: 1fr;
+    padding: 32px 20px 0;
+    min-height: calc(100vh -64px);
+    text-align: center;
+  }
+
+  .home__intro h1 {
+    font-size: 2.3rem;
+  }
+
+  .home__role {
+    font-size: 1.4rem;
+  }
+
+  .home__contact {
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 25px;
+  }
+}

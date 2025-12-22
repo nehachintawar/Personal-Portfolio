@@ -1,3 +1,70 @@
+/* Section base */
 .contact {
+  min-height: 100vh;
+  background-color: #1f263b;
+  display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px 20px;
+  color: #dbe2ff;
+  position: relative;
 }
+
+/* Title */
+.section__title {
+  font-size: 2.8rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: #cfd6ff;
+}
+
+/* Description text */
+.contact p {
+  max-width: 620px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 28px;
+  color: #cbd2ff;
+}
+
+/* Email button */
+.btn--outline {
+  border: 2px solid #8fa2ff;
+  background: transparent;
+  color: #8fa2ff;
+  padding: 12px 30px;
+  font-size: 1rem;
+  text-transform: lowercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn--outline:hover {
+  background-color: #8fa2ff;
+  color: #1f263b;
+}
+
+/* Social icons */
+.social-icons {
+  display: flex;
+  gap: 14px;
+  margin-top: 22px;
+}
+
+.social-icons a {
+  color: #cbd2ff;
+  font-size: 1.2rem;
+  transition:
+    transform 0.3s ease,
+    color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #8fa2ff;
+  transform: scale(1.2);
+}
+
+/* Footer text (Created By...) */

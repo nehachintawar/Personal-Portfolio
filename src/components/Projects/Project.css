@@ -2,6 +2,25 @@
   max-width: 1100px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));
-  grid-gap: 2em;
+  grid-template-columns: repeat(3, 1fr); /* ✅ correct */
+  gap: 2em;
+  align-items: stretch;
+  text-align: center;
+}
+
+.projects {
+  min-height: 100dvh;
+  padding: 1rem 1em;
+  align-items: center;
+  text-align: center;
+  background-color: #1f263b;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+@media (max-width: 600px) {
+  .projects__grid {
+    grid-template-columns: 1fr; /* ✅ one column on mobile */
+  }
 }
