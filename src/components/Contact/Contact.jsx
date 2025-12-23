@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaGithub, FaLinkedin} from 'react-icons/fa';
 import { contact } from '../../portfolio';
 import './Contact.css';
 
@@ -16,6 +16,7 @@ const Contact = () => {
           Email Me
         </span>
       </a>
+   
       <div className="social-icons">
         <a
           href="https://www.linkedin.com/in/neha-chintawar-46a713228/"

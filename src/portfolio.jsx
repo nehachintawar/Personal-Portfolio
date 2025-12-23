@@ -70,17 +70,6 @@ const projects = [
   },
 ];
 
-// const skills = [
-//   'HTML',
-//   'CSS',
-//   'JavaScript',
-//   'React',
-//   'Node',
-//   'Express',
-//   'MongoDB',
-//   'Material UI',
-//   'Git',
-// ];
 
 const skills = [
   {

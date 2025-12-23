@@ -37,7 +37,6 @@
   color: #8fa2ff;
   padding: 12px 30px;
   font-size: 1rem;
-  text-transform: lowercase;
   cursor: pointer;
   transition: all 0.3s ease;
 }
